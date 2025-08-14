@@ -1,0 +1,109 @@
+.section-content {
+  background-color: #0A0A0A;
+  padding: 2rem 2.5rem;
+  border-left: 8px solid #FFD700; /* F1-style yellow accent stripe */
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+  font-family: 'Courier New', monospace; /* F1 terminal look */
+  position: relative;
+  overflow: hidden;
+}
+
+.section-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8px;
+  background: #FFD700;
+  box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700 inset;
+  z-index: 0;
+}
+
+.section-content h2 {
+  color: #FFD700;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px black;
+}
+
+.section-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #EAEAEA;
+  margin: 0.5rem 0;
+}
+
+
+/* Typing + blinking cursor effect */
+.terminal-text {
+  font-family: 'Courier New', monospace;
+  color: #FFD700;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #FFD700;
+  width: fit-content;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent }
+}
+
+/* Glowing edge pulse for active state */
+.section-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8px;
+  background: #FFD700;
+  box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700 inset;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700 inset;
+  }
+  50% {
+    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700 inset;
+  }
+  100% {
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700 inset;
+  }
+}
+
+/* Optional: Ticker animation for moving text */
+.ticker {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  color: #FFD700;
+  font-family: 'Courier New', monospace;
+  background: #0A0A0A;
+  border-top: 1px solid #FFD700;
+  border-bottom: 1px solid #FFD700;
+}
+
+.ticker span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker-slide 10s linear infinite;
+}
+
+@keyframes ticker-slide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}

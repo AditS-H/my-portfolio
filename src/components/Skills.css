@@ -1,0 +1,15 @@
+
+.body
+{
+    overflow:hidden ;
+    color: #bfae2a;
+}
+.skill-container h1
+{
+    font-family: aerospace;
+    color: #000000;
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    background-color: #bfae2a;
+   
+}
