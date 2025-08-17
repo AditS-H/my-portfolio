@@ -5,10 +5,7 @@
   "homepage": "https://AditS-H.github.io/My_portfolio",
   "dependencies": {
     "@pmndrs/assets": "^1.7.0",
-    "@react-spring/three": {
-      "react": "^18.0.0",
-      "react-dom": "^18.0.0"
-    },
+    "@react-spring/three": "^9.7.5",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@testing-library/dom": "^10.4.0",
@@ -21,6 +18,12 @@
     "react-scripts": "^5.0.1",
     "three": "^0.175.0",
     "web-vitals": "^2.1.4"
+  },
+  "overrides": {
+    "@react-spring/three": {
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
