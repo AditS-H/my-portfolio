@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, Stage } from '@react-three/drei';
 
 function CarModel() {
-  const { scene } = useGLTF('https://cors-anywhere.herokuapp.com/https://drive.google.com/uc?export=download&id=1ZgdqcF1boKeoYZe5rj5rEoksur5iVlfI');
+  const { scene } = useGLTF('https://github.com/AditS-H/my-portfolio/releases/download/v1.0.0/new_car1.glb')
   const backgroundColor = '#0d0d0d'; // Static color for floor/plane/shadow parts
 
   useEffect(() => {
