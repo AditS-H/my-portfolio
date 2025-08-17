@@ -5,7 +5,10 @@
   "homepage": "https://AditS-H.github.io/My_portfolio",
   "dependencies": {
     "@pmndrs/assets": "^1.7.0",
-    "@react-spring/three": "^9.7.5",
+    "@react-spring/three": {
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0"
+    },
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@testing-library/dom": "^10.4.0",
