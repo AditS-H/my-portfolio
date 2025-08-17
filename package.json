@@ -2,7 +2,6 @@
   "name": "my-portfolio1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AditS-H.github.io/My_portfolio",
   "dependencies": {
     "@pmndrs/assets": "^1.7.0",
     "@react-spring/three": "^9.7.5",
