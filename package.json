@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm install --legacy-peer-deps && react-scripts build",
+    "build": "react-scripts build",
     "serve": "npx serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
