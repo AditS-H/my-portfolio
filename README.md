@@ -101,7 +101,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Adit S-H - aditss2327@gmail.com
 
-Project Link: https://github.com/AditS-H/My_portfolio
 
 ## 🙏 Acknowledgments
 
