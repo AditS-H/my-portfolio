@@ -2,7 +2,6 @@
 
 Welcome to my interactive portfolio website! This project showcases a unique blend of 3D graphics, animations, and modern web technologies to create an immersive portfolio experience.
 
-![Portfolio Preview](add_your_screenshot_url_here)
 
 ## ✨ Features
 
@@ -99,7 +98,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
-Adit S-H - [Your Email or LinkedIn]
+Adit S-H - [storageadit936@gmail.com]
 
 Project Link: [https://github.com/AditS-H/My_portfolio](https://github.com/AditS-H/My_portfolio)
 

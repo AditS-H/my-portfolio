@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 function CarModel({ scrollProgress }) {
-  const { scene, nodes, materials } = useGLTF('https://api.codetabs.com/v1/proxy/?quest=https://github.com/AditS-H/my-portfolio/releases/download/v1.0.0/new_car1.glb')
+  const { scene, nodes, materials } = useGLTF('https://api.codetabs.com/v1/proxy/?quest=https://github.com/AditS-H/my-portfolio/releases/download/v1.0.0/car_lowres.glb')
   const groupRef = useRef();
   const carParts = useRef({});
   const originalTransforms = useRef({});
