@@ -4,8 +4,6 @@ import Navbar from './components/Navbar';
 import CarModels from './components/CarModels';
 import CarModels1 from './components/CarModels1';
 import './App.css';
-import Skill from './components/Skills';
-import { onScroll } from 'animejs';
 import Code from './components/Code';
 import Contact from './components/Contact';
 

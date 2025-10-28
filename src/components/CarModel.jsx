@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useMemo } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
 
 function CarModel({ scrollProgress }) {
   const { scene, nodes, materials } =  useGLTF('/models/car_lowres.glb')
