@@ -94,7 +94,7 @@ function Chatbot() {
         setIsOpen(true);
         setIsLoading(true);
 
-        const API_BASE = process.env.REACT_APP_API_URL ;
+        const API_BASE = process.env.REACT_APP_API_URL || '';
 
         try {
             const response = await fetch(`${API_BASE}/api/chat`, {
