@@ -6,6 +6,7 @@ import CarModels1 from './components/CarModels1';
 import './App.css';
 import Code from './components/Code';
 import Contact from './components/Contact';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -69,6 +70,12 @@ function App() {
             <div id="contact">
               <Contact />
             </div>
+
+
+            <div id='chatbot'>
+              <Chatbot />
+            </div>
+            
           </div>
         </>
       )}
