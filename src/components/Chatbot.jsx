@@ -94,18 +94,20 @@ function Chatbot() {
         setIsOpen(true);
         setIsLoading(true);
 
-        const API_BASE = process.env.REACT_APP_API_URL || '';
+      const API_BASE = process.env.REACT_APP_API_URL;
+if (!API_BASE) {
+  throw new Error('Missing REACT_APP_API_URL in Netlify');
+}
 
         try {
             const response = await fetch(`${API_BASE}/api/chat`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                // 🛑 CHANGED: Sending BOTH 'message' and 'sessionId' exactly as validateInput() requires
-                body: JSON.stringify({ 
-                    message: trimmedValue,
-                    sessionId: sessionId 
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    message: trimmedValue,
+    sessionId,
                 }), 
             });
 
